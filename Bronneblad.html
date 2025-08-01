@@ -2,6 +2,7 @@
 <head>
 	<title>Bronneblad</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 	<body>
 	<nav class="nav-container">
@@ -110,6 +111,7 @@
 			/* Flex row navigation */
 			.navbar {
 				display: flex;
+				flex-direction: row;
 				gap: 1rem;
 				border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 				padding: 1rem 0;
@@ -145,6 +147,17 @@
 				color: white;
 				box-shadow: inset 0 0 0 2px white;
 			}
+
+			@media (max-width: 992px) {
+				.navbar {
+					flex-direction: column !important;
+				}
+
+				.nav-container {
+					padding: 0 1em;
+					position: unset;
+				}
+			}
 		</style>
 
 		<style>
@@ -165,7 +178,6 @@
 				top: 0;
 				width: 100%;
 				z-index: -1;
-				opacity: 0.1;
 			}
 
 			body::after {
@@ -223,6 +235,13 @@
 			section {
 				padding-left: 10rem;
 				padding-right: 10rem;
+			}
+
+			@media (max-width: 992px) {
+				section {
+					padding-left: 1rem;
+					padding-right: 1rem;
+				}
 			}
 
 			p:not(.footer p) {
