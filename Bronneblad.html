@@ -13,24 +13,67 @@
 
 	<section>
 		<h1><u>Bevindings</u></h1>
-		<table Border="5">
-			<th colspan="3">Grafieke</th>
-			<tr>
-				<td><img src="Sirkelgrafiek.png" height="200" width="350" alt="Terugvoer volgens % Geslag" ></td>
-				<td><b>Aanbeveling:</b> Gevallestudie moet uit eweveel dames en mans bestaan.</td>
-				<td><b>Bevinding:</b> Die grafiek dui die persentasie geslag (dames en mans) wat die vorm beantwoord het aan.</td>
-			</tr>
-			<tr>
-				<td><img src="Staafgrafiek.png" height="200" width="350" alt="Gevoel teenoor KI Gebruik" ></td>
-				<td><b>Aanbeveling:</b>Die gevallestudie moet ’n groter hoeveelheid mense insluit.</td>
-				<td><b>Bevinding:</b>Die grafiek toon die mense se gevoel teenoor die gebruik van KI-instrumente aan.</td>
-			</tr>
-			<tr>
-				<td><img src="Picture3.png" height="200" width="350" alt="Staafgrafiek van deelname"></td>
-				<td><b>Aanbeveling:</b>xxxx</td>
-				<td><b>Bevinding:</b>xxx</td>
-			</tr>
-		</table>
+
+		<div class="cards-header">
+			<h2>Grafieke</h2>
+		</div>
+
+		<div class="cards-container">
+			<div class="chart-card">
+				<div class="card-image">
+					<img src="Sirkelgrafiek.png" height="200" width="350" alt="Terugvoer volgens % Geslag">
+				</div>
+				<div class="card-content">
+					<div class="card-section recommendation">
+						<div class="card-text">
+							<b>Aanbeveling:</b> Gevallestudie moet uit eweveel dames en mans bestaan.
+						</div>
+					</div>
+					<div class="card-section finding">
+						<div class="card-text">
+							<b>Bevinding:</b> Die grafiek dui die persentasie geslag (dames en mans) wat die vorm beantwoord het aan.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="chart-card">
+				<div class="card-image">
+					<img src="Staafgrafiek.png" height="200" width="350" alt="Gevoel teenoor KI Gebruik">
+				</div>
+				<div class="card-content">
+					<div class="card-section recommendation">
+						<div class="card-text">
+							<b>Aanbeveling:</b>Die gevallestudie moet 'n groter hoeveelheid mense insluit.
+						</div>
+					</div>
+					<div class="card-section finding">
+						<div class="card-text">
+							<b>Bevinding:</b>Die grafiek toon die mense se gevoel teenoor die gebruik van KI-instrumente aan.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="chart-card">
+				<div class="card-image">
+					<img src="Picture3.png" height="200" width="350" alt="Staafgrafiek van deelname">
+				</div>
+				<div class="card-content">
+					<div class="card-section recommendation">
+						<div class="card-text">
+							<b>Aanbeveling:</b>xxxx
+						</div>
+					</div>
+					<div class="card-section finding">
+						<div class="card-text">
+							<b>Bevinding:</b>xxx
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<h1><u>Bibliografie</u></h1>
 		<ul>
 			<li>Adendorff, H. J.-S. (2024). KI-geletterheid is 'n kritieke komponent van leer in die 21ste eeu. Universiteit van Stellenbosch, 1-3.</li>
@@ -40,6 +83,7 @@
 
 		<hr></hr>
 	</section>
+
 
 	<style>
 		body {
@@ -133,73 +177,94 @@
 			border-left: 10px solid #d9a638;
 		}
 
-		table {
-			width: 100%;
-			border-collapse: collapse;
-			margin: 25px 0;
-			background: white;
-			box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-			border-radius: 12px;
-			overflow: hidden;
-			border: none !important;
-		}
-
-		table th {
+		.cards-header {
 			background: linear-gradient(135deg, #088DAE 0%, #334155 100%);
 			color: white;
-			font-weight: 600;
-			font-size: 1.2rem;
 			padding: 20px;
+			margin: 25px 0 30px 0;
+			border-radius: 12px;
 			text-align: center;
+			box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+		}
+
+		.cards-header h2 {
+			margin: 0;
+			font-size: 1.2rem;
+			font-weight: 600;
 			letter-spacing: 0.5px;
+			color: white;
+			background: none;
+			border: none;
+			padding: 0;
 		}
 
-		table td {
-			padding: 15px;
-			border-bottom: 1px solid #e0e0e0;
-			vertical-align: top;
-			transition: background-color 0.3s ease;
+		.cards-container {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			margin: 30px 0;
 		}
 
-		table tr:hover td {
-			background-color: #f8f9fa;
+		.chart-card {
+			background: white;
+			border-radius: 16px;
+			box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+			overflow: hidden;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			border: 1px solid #f0f0f0;
 		}
 
-		table tr:last-child td {
-			border-bottom: none;
+		.chart-card:hover {
+			transform: translateY(-8px);
+			box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 		}
 
-		/* Optimized column widths for better space usage */
-		table td:first-child {
-			width: 40%; /* Image column */
+		.card-image {
+			padding: 30px;
+			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 			text-align: center;
+			border-bottom: 2px solid #e9ecef;
 		}
 
-		table td:nth-child(2),
-		table td:nth-child(3) {
-			width: 30%; /* Text columns */
-		}
-
-		/* Style the images in table - make them more responsive */
-		table td img {
+		.card-image img {
 			max-width: 100%;
 			height: auto;
-			min-height: 180px;
-			border-radius: 8px;
-			box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			border-radius: 12px;
+			box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+			transition: transform 0.3s ease;
 		}
 
-		table td img:hover {
+		.card-image img:hover {
 			transform: scale(1.05);
-			box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 		}
 
-		/* Style bold text in table with better spacing */
-		table td b {
+		.card-content {
+			padding: 25px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 25px;
+		}
+
+		.card-section {
+			padding: 20px;
+			border-radius: 12px;
+			position: relative;
+		}
+
+		.card-section.recommendation {
+			background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 100%);
+			border-left: 5px solid #28a745;
+		}
+
+		.card-section.finding {
+			background: linear-gradient(135deg, #e3f2fd 0%, #f1f8ff 100%);
+			border-left: 5px solid #088DAE;
+		}
+
+		.card-text b {
 			color: #2c3e50;
 			font-size: 1.1rem;
-			display: block;
+			display: inline;
 			margin-bottom: 10px;
 			padding: 8px 12px;
 			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -207,58 +272,12 @@
 			border-radius: 4px;
 		}
 
-		/* Better text formatting in table cells */
-		table td:not(:first-child) {
+		.card-text {
 			font-size: 0.95rem;
 			line-height: 1.6;
 			text-align: justify;
+			color: #4a5568;
 		}
-
-		/* Add some visual separation between recommendation and finding */
-		table td:nth-child(2) {
-			border-right: 2px solid #f1f3f4;
-		}
-
-		/* Responsive design for smaller screens */
-		@media (max-width: 1200px) {
-			table td img {
-				min-height: 150px;
-			}
-
-			table td {
-				padding: 12px;
-			}
-
-			table td b {
-				font-size: 1rem;
-			}
-		}
-
-		@media (max-width: 768px) {
-			/* Stack table content vertically on mobile */
-			table, thead, tbody, th, td, tr {
-				display: block;
-			}
-
-			table td:first-child,
-			table td:nth-child(2),
-			table td:nth-child(3) {
-				width: 100%;
-			}
-
-			table td {
-				border: none;
-				border-bottom: 1px solid #e0e0e0;
-				padding: 15px;
-			}
-
-			table td img {
-				max-width: 80%;
-				min-height: auto;
-			}
-		}
-
-
 
 	</style>
 	</body>
