@@ -3,6 +3,11 @@
 	<title>Inligtingsblad</title>
 </head>
 	<body>
+		<ul class="navbar">
+			<li><a href="Voorblad.html">Voorblad</a></li>
+			<li><a class="active" href="Inligtingsblad.html">Inligtingsblad</a></li>
+			<li><a href="Bronneblad.html">Bronneblad</a></li>
+		</ul>
 		<h1><u>Die impak (positief en negatief) van die gebruik van die KI-instrumente in die onderwys- en opleidingsektor</u></h1>
 			<h2>Wat is KI en hoekom is dit belangrik in die onderwys- en opleidingsektor?</h2>
 				<p>Kunsmatige intelligensie is die vermoë van rekenaars om te dink en te leer. As ’n rekenaar of robot ’n probleem oplos of ’n taal gebruik, is dit intelligent, maar omdat dit anders as ons mense se intelligensie is, verwys ons daarna as kunsmatige intelligensie.
@@ -77,12 +82,40 @@
 			KI kan groot hoeveelhede data ontleed om tendense te identifiseer, wat opvoeders help om ingeligte besluite te neem om onderrigmetodes en leerstrategieë te verbeter.
 			KI-nutsmiddels kan ondersteuning bied aan studente met gestremdhede, en bied pasgemaakte leerhulpbronne en intydse vertalings, wat inklusiwiteit verseker.
 			KI laat toe dat opvoedkundige inhoud aan 'n groter gehoor gelewer word, wat kwaliteit onderwys wêreldwyd toeganklik maak.</p>
-<hr></hr>			
-	<h2>Vervolg is die ander blaaie:</h2>
-		<ul>	
-		<li><a href="Voorblad.html">Voorblad</a></li>
-		<li><a href="Inligtingsblad.html">Inligtingsblad</a></li>
-		<li><a href="Bronneblad.html">Bronneblad</a></li>
-		</ul>
+<hr></hr>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.navbar {
+				background: #334155;
+				list-style-type: none;
+				display: flex;
+				flex-direction: row;
+				gap: 0.5rem;
+				border-bottom: 1px solid black;
+				padding: 1rem;
+			}
+
+			.navbar li a {
+				text-decoration: none;
+				border: 1px solid black;
+				padding: 0.5rem;
+				background: white;
+				color: black;
+			}
+
+			.navbar li a:hover {
+				background: #ECECEC;
+			}
+
+			.navbar li a.active{
+				background: #088DAE;
+				color: white;
+			}
+
+		</style>
 	</body>
 </html>
