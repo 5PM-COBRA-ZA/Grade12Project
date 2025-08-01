@@ -3,11 +3,13 @@
 	<title>Bronneblad</title>
 </head>
 	<body>
-	<ul class="navbar">
-		<li><a href="Voorblad.html">Voorblad</a></li>
-		<li><a href="Inligtingsblad.html">Inligtingsblad</a></li>
-		<li><a class="active" href="Bronneblad.html">Bronneblad</a></li>
-	</ul>
+	<div class="nav-container">
+		<ul class="navbar">
+			<li><a href="Voorblad.html">Voorblad</a></li>
+			<li><a href="Inligtingsblad.html">Inligtingsblad</a></li>
+			<li><a class="active" href="Bronneblad.html">Bronneblad</a></li>
+		</ul>
+	</div>
 	<h1><u>Bevindings</u></h1>
 	<table Border="5">
 		<th colspan="3">Grafieke</th>
@@ -41,14 +43,23 @@
 			padding: 0;
 		}
 
-		.navbar {
+		.nav-container {
+			padding-left: 10rem;
+			padding-right: 10rem;
 			background: #334155;
+			position: sticky;
+			top: 0;
+		}
+
+		.navbar {
 			list-style-type: none;
 			display: flex;
 			flex-direction: row;
 			gap: 0.5rem;
 			border-bottom: 1px solid black;
 			padding: 1rem;
+			position: sticky;
+			top: 0;
 		}
 
 		.navbar li a {
