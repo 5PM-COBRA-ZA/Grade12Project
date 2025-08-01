@@ -88,49 +88,76 @@
 				KI kan groot hoeveelhede data ontleed om tendense te identifiseer, wat opvoeders help om ingeligte besluite te neem om onderrigmetodes en leerstrategieë te verbeter.
 				KI-nutsmiddels kan ondersteuning bied aan studente met gestremdhede, en bied pasgemaakte leerhulpbronne en intydse vertalings, wat inklusiwiteit verseker.
 				KI laat toe dat opvoedkundige inhoud aan 'n groter gehoor gelewer word, wat kwaliteit onderwys wêreldwyd toeganklik maak.</p>
-			<hr></hr>
 		</section>
+
+		<footer class="footer">
+			<p>&copy; 2025 Jou Webwerf. Alle regte voorbehou.</p>
+		</footer>
+
+		<!--Navigation styling-->
+		<style>
+			/* Import a clean sans-serif font (optional but recommended) */
+			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+			body {
+				margin: 0;
+				font-family: 'Inter', sans-serif;
+			}
+
+			/* Container for the navigation */
+			.nav-container {
+				padding: 0 10rem;
+				background: linear-gradient(135deg, #334155 0%, #088DAE 100%);
+				position: sticky;
+				top: 0;
+				z-index: 1000;
+				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+			}
+
+			/* Flex row navigation */
+			.navbar {
+				display: flex;
+				gap: 1rem;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+				padding: 1rem 0;
+			}
+
+			/* Each nav item takes equal width */
+			.navbar > div {
+				text-align: center;
+			}
+
+			/* Style for each link */
+			.navbar div a {
+				display: block;
+				padding: 0.75rem 1rem;
+				text-decoration: none;
+				background-color: white;
+				color: #334155;
+				border-radius: 6px;
+				font-weight: 600;
+				transition: all 0.3s ease;
+			}
+
+			/* Hover effect */
+			.navbar div a:hover {
+				background-color: #f0f4f8;
+				color: #088DAE;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+
+			/* Active tab */
+			.navbar div a.active {
+				background-color: #088DAE;
+				color: white;
+				box-shadow: inset 0 0 0 2px white;
+			}
+		</style>
 
 		<style>
 			body {
 				margin: 0;
 				padding: 0;
-			}
-
-			.nav-container {
-				padding-left: 10rem;
-				padding-right: 10rem;
-				background: linear-gradient(135deg, #334155 0%,  #088DAE 100%);
-				position: sticky;
-				top: 0;
-			}
-
-			.navbar {
-				list-style-type: none;
-				display: flex;
-				flex-direction: row;
-				gap: 0.5rem;
-				border-bottom: 1px solid black;
-				padding: 1rem 1rem 1rem 0;
-				position: sticky;
-				top: 0;
-			}
-
-			.navbar div a {
-				text-decoration: none;
-				border: 1px solid black;
-				padding: 0.5rem;
-				background: white;
-				color: black;
-			}
-
-			.navbar div a:hover {
-				background: #ECECEC;
-			}
-
-			.navbar div a.active{
-				background: #088DAE;
-				color: white;
 			}
 
 			a {
@@ -160,12 +187,23 @@
 				border-radius: 0 5px 5px 0;
 			}
 
+			h3 {
+				color: #34495e;
+				font-size: 1.3rem;
+				margin: 25px 0 15px 0;
+				padding: 6px 0;
+				border-left: 16px solid #0356cf;
+				padding-left: 20px;
+				background-color: #ecf0f1;
+				border-radius: 0 5px 5px 0;
+			}
+
 			section {
 				padding-left: 10rem;
 				padding-right: 10rem;
 			}
 
-			p {
+			p:not(.footer p) {
 				background-color: white;
 				padding: 20px;
 				margin: 15px 0;
@@ -183,6 +221,16 @@
 				border-left: 10px solid #d9a638;
 			}
 
+		</style>
+
+		<style>
+			.footer {
+				background: linear-gradient(135deg, #334155 0%, #088DAE 100%);
+				color: white;
+				text-align: center;
+				padding: 1rem 10rem;
+				font-size: 0.9rem;
+			}
 		</style>
 	</body>
 </html>

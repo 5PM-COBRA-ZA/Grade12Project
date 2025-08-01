@@ -81,205 +81,251 @@
 			<li>Esterhuizen, Z. (2024, Junie 10). Kunsmatige intelligensie. Retrieved from www.weet.co.za: https://weet.co.za/wetenskap-en-geografie/kunsmatige-intelligensie/</li>
 			<li>O'Reilly, S. S. (2025, Januarie 24). Die rol van onderwysers in die era van kunsmatige intelligensie (KI). Retrieved from www.akademia.ac.za: https://akademia.ac.za/onderwysers-en-kunsmatige-intelligensie/</li>
 		</ul>
-
-		<hr></hr>
 	</section>
 
+	<footer class="footer">
+		<p>&copy; 2025 Jou Webwerf. Alle regte voorbehou.</p>
+	</footer>
 
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-		}
+		<!--Navigation styling-->
+		<style>
+			/* Import a clean sans-serif font (optional but recommended) */
+			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-		.nav-container {
-			padding-left: 10rem;
-			padding-right: 10rem;
-			background: linear-gradient(135deg, #334155 0%,  #088DAE 100%);
-			position: sticky;
-			top: 0;
-		}
+			body {
+				margin: 0;
+				font-family: 'Inter', sans-serif;
+			}
 
-		.navbar {
-			list-style-type: none;
-			display: flex;
-			flex-direction: row;
-			gap: 0.5rem;
-			border-bottom: 1px solid black;
-			padding: 1rem 1rem 1rem 0;
-			position: sticky;
-			top: 0;
-		}
+			/* Container for the navigation */
+			.nav-container {
+				padding: 0 10rem;
+				background: linear-gradient(135deg, #334155 0%, #088DAE 100%);
+				position: sticky;
+				top: 0;
+				z-index: 1000;
+				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+			}
 
-		.navbar div a {
-			text-decoration: none;
-			border: 1px solid black;
-			padding: 0.5rem;
-			background: white;
-			color: black;
-		}
+			/* Flex row navigation */
+			.navbar {
+				display: flex;
+				gap: 1rem;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+				padding: 1rem 0;
+			}
 
-		.navbar div a:hover {
-			background: #ECECEC;
-		}
+			/* Each nav item takes equal width */
+			.navbar > div {
+				text-align: center;
+			}
 
-		.navbar div a.active{
-			background: #088DAE;
-			color: white;
-		}
+			/* Style for each link */
+			.navbar div a {
+				display: block;
+				padding: 0.75rem 1rem;
+				text-decoration: none;
+				background-color: white;
+				color: #334155;
+				border-radius: 6px;
+				font-weight: 600;
+				transition: all 0.3s ease;
+			}
 
-		a {
-			border-radius: 50px;
-		}
+			/* Hover effect */
+			.navbar div a:hover {
+				background-color: #f0f4f8;
+				color: #088DAE;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
 
-		h1 {
-			color: #2c3e50;
-			font-size: 1.8rem;
-			text-align: center;
-			margin: 30px 0 20px 0;
-			padding: 15px;
-			background: linear-gradient(135deg, #088DAE 0%, #334155 100%);
-			color: white;
-			/*border-radius: 8px;*/
-			box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-		}
+			/* Active tab */
+			.navbar div a.active {
+				background-color: #088DAE;
+				color: white;
+				box-shadow: inset 0 0 0 2px white;
+			}
+		</style>
 
-		h2 {
-			color: #34495e;
-			font-size: 1.3rem;
-			margin: 25px 0 15px 0;
-			padding: 12px 0;
-			border-left: 16px solid #00334d;
-			padding-left: 20px;
-			background-color: #ecf0f1;
-			border-radius: 0 5px 5px 0;
-		}
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
 
-		section {
-			padding-left: 10rem;
-			padding-right: 10rem;
-		}
+			a {
+				border-radius: 50px;
+			}
 
-		p {
-			background-color: white;
-			padding: 20px;
-			margin: 15px 0;
-			box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-			text-align: justify;
-			border-left: 16px solid #088DAE;
-		}
+			h1 {
+				color: #2c3e50;
+				font-size: 1.8rem;
+				text-align: center;
+				margin: 30px 0 20px 0;
+				padding: 15px;
+				background: linear-gradient(135deg, #088DAE 0%, #334155 100%);
+				color: white;
+				/*border-radius: 8px;*/
+				box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+			}
 
-		li {
-			background-color: white;
-			padding: 5px;
-			margin: 15px 0;
-			box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-			text-align: justify;
-			border-left: 10px solid #d9a638;
-		}
+			h2 {
+				color: #34495e;
+				font-size: 1.3rem;
+				margin: 25px 0 15px 0;
+				padding: 12px 0;
+				border-left: 16px solid #00334d;
+				padding-left: 20px;
+				background-color: #ecf0f1;
+				border-radius: 0 5px 5px 0;
+			}
 
-		.cards-header {
-			background: linear-gradient(135deg, #088DAE 0%, #334155 100%);
-			color: white;
-			padding: 20px;
-			margin: 25px 0 30px 0;
-			border-radius: 12px;
-			text-align: center;
-			box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-		}
+			h3 {
+				color: #34495e;
+				font-size: 1.3rem;
+				margin: 25px 0 15px 0;
+				padding: 6px 0;
+				border-left: 16px solid #0356cf;
+				padding-left: 20px;
+				background-color: #ecf0f1;
+				border-radius: 0 5px 5px 0;
+			}
 
-		.cards-header h2 {
-			margin: 0;
-			font-size: 1.2rem;
-			font-weight: 600;
-			letter-spacing: 0.5px;
-			color: white;
-			background: none;
-			border: none;
-			padding: 0;
-		}
+			section {
+				padding-left: 10rem;
+				padding-right: 10rem;
+			}
 
-		.cards-container {
-			display: flex;
-			flex-direction: column;
-			gap: 30px;
-			margin: 30px 0;
-		}
+			p:not(.footer p) {
+				background-color: white;
+				padding: 20px;
+				margin: 15px 0;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+				text-align: justify;
+				border-left: 16px solid #088DAE;
+			}
 
-		.chart-card {
-			background: white;
-			border-radius: 16px;
-			box-shadow: 0 12px 35px rgba(0,0,0,0.1);
-			overflow: hidden;
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
-			border: 1px solid #f0f0f0;
-		}
+			li {
+				background-color: white;
+				padding: 5px;
+				margin: 15px 0;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+				text-align: justify;
+				border-left: 10px solid #d9a638;
+			}
 
-		.chart-card:hover {
-			transform: translateY(-8px);
-			box-shadow: 0 20px 45px rgba(0,0,0,0.15);
-		}
+			.cards-header {
+				background: linear-gradient(135deg, #088DAE 0%, #334155 100%);
+				color: white;
+				padding: 20px;
+				margin: 25px 0 30px 0;
+				border-radius: 12px;
+				text-align: center;
+				box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+			}
 
-		.card-image {
-			padding: 30px;
-			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-			text-align: center;
-			border-bottom: 2px solid #e9ecef;
-		}
+			.cards-header h2 {
+				margin: 0;
+				font-size: 1.2rem;
+				font-weight: 600;
+				letter-spacing: 0.5px;
+				color: white;
+				background: none;
+				border: none;
+				padding: 0;
+			}
 
-		.card-image img {
-			max-width: 100%;
-			height: auto;
-			border-radius: 12px;
-			box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-			transition: transform 0.3s ease;
-		}
+			.cards-container {
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+				margin: 30px 0;
+			}
 
-		.card-image img:hover {
-			transform: scale(1.05);
-		}
+			.chart-card {
+				background: white;
+				border-radius: 16px;
+				box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+				overflow: hidden;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				border: 1px solid #f0f0f0;
+			}
 
-		.card-content {
-			padding: 25px;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 25px;
-		}
+			.chart-card:hover {
+				transform: translateY(-8px);
+				box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+			}
 
-		.card-section {
-			padding: 20px;
-			border-radius: 12px;
-			position: relative;
-		}
+			.card-image {
+				padding: 30px;
+				background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+				text-align: center;
+				border-bottom: 2px solid #e9ecef;
+			}
 
-		.card-section.recommendation {
-			background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 100%);
-			border-left: 5px solid #28a745;
-		}
+			.card-image img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 12px;
+				box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+				transition: transform 0.3s ease;
+			}
 
-		.card-section.finding {
-			background: linear-gradient(135deg, #e3f2fd 0%, #f1f8ff 100%);
-			border-left: 5px solid #088DAE;
-		}
+			.card-image img:hover {
+				transform: scale(1.05);
+			}
 
-		.card-text b {
-			color: #2c3e50;
-			font-size: 1.1rem;
-			display: inline;
-			margin-bottom: 10px;
-			padding: 8px 12px;
-			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-			border-left: 4px solid #088DAE;
-			border-radius: 4px;
-		}
+			.card-content {
+				padding: 25px;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 25px;
+			}
 
-		.card-text {
-			font-size: 0.95rem;
-			line-height: 1.6;
-			text-align: justify;
-			color: #4a5568;
-		}
+			.card-section {
+				padding: 20px;
+				border-radius: 12px;
+				position: relative;
+			}
 
-	</style>
+			.card-section.recommendation {
+				background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 100%);
+				border-left: 5px solid #28a745;
+			}
+
+			.card-section.finding {
+				background: linear-gradient(135deg, #e3f2fd 0%, #f1f8ff 100%);
+				border-left: 5px solid #088DAE;
+			}
+
+			.card-text b {
+				color: #2c3e50;
+				font-size: 1.1rem;
+				display: inline;
+				margin-bottom: 10px;
+				padding: 8px 12px;
+				background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+				border-left: 4px solid #088DAE;
+				border-radius: 4px;
+			}
+
+			.card-text {
+				font-size: 0.95rem;
+				line-height: 1.6;
+				text-align: justify;
+				color: #4a5568;
+			}
+
+		</style>
+
+		<style>
+			.footer {
+				background: linear-gradient(135deg, #334155 0%, #088DAE 100%);
+				color: white;
+				text-align: center;
+				padding: 1rem 10rem;
+				font-size: 0.9rem;
+			}
+		</style>
 	</body>
 </html>
