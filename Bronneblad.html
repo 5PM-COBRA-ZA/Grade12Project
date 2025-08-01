@@ -3,11 +3,13 @@
 	<title>Bronneblad</title>
 </head>
 	<body>
-	<ul class="navbar">
-		<li><a href="Voorblad.html">Voorblad</a></li>
-		<li><a href="Inligtingsblad.html">Inligtingsblad</a></li>
-		<li><a class="active" href="Bronneblad.html">Bronneblad</a></li>
-	</ul>
+	<div class="nav-container">
+		<ul class="navbar">
+			<li><a href="Voorblad.html">Voorblad</a></li>
+			<li><a href="Inligtingsblad.html">Inligtingsblad</a></li>
+			<li><a class="active" href="Bronneblad.html">Bronneblad</a></li>
+		</ul>
+	</div>
 	<h1><u>Bevindings</u></h1>
 	<table Border="5">
 		<th colspan="3">Grafieke</th>
@@ -41,14 +43,23 @@
 			padding: 0;
 		}
 
-		.navbar {
+		.nav-container {
+			padding-left: 10rem;
+			padding-right: 10rem;
 			background: #334155;
+			position: sticky;
+			top: 0;
+		}
+
+		.navbar {
 			list-style-type: none;
 			display: flex;
 			flex-direction: row;
 			gap: 0.5rem;
 			border-bottom: 1px solid black;
 			padding: 1rem;
+			position: sticky;
+			top: 0;
 		}
 
 		.navbar li a {
@@ -67,6 +78,35 @@
 			background: #088DAE;
 			color: white;
 		}
+
+		a {
+			border-radius: 50px;
+		}
+
+		h1 {
+			color: #2c3e50;
+			font-size: 1.8rem;
+			text-align: center;
+			margin: 30px 0 20px 0;
+			padding: 15px;
+			background: linear-gradient(135deg, #088DAE 0%, #334155 100%);
+			color: white;
+			/*border-radius: 8px;*/
+			box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+		}
+
+		h2 {
+			color: #34495e;
+			font-size: 1.3rem;
+			margin: 25px 0 15px 0;
+			padding: 12px 0;
+			border-left: 16px solid #088DAE;
+			padding-left: 20px;
+			background-color: #ecf0f1;
+			border-radius: 0 5px 5px 0;
+		}
+
+
 
 	</style>
 	</body>
