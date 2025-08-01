@@ -4,11 +4,11 @@
 </head>
 	<body>
 		<nav class="nav-container">
-			<ul class="navbar">
-				<li><a href="Voorblad.html">Voorblad</a></li>
-				<li><a class="active" href="Inligtingsblad.html">Inligtingsblad</a></li>
-				<li><a href="Bronneblad.html">Bronneblad</a></li>
-			</ul>
+			<div class="navbar">
+				<div><a href="Voorblad.html">Voorblad</a></div>
+				<div><a class="active" href="Inligtingsblad.html">Inligtingsblad</a></div>
+				<div><a href="Bronneblad.html">Bronneblad</a></div>
+			</div>
 		</nav>
 
 		<section>
@@ -24,13 +24,14 @@
 				Onderwysers kan die grens tussen tegnologiese hulpmiddels en menslike beheer duidelik maak. Dit is die taak van die onderwyser om leerders toe te rus om krities, kreatief en op ŉ etiese wyse met inligting en data, wat hul met die druk van ŉ knoppie kan bekom, te werk.
 			</p>
 			<h2>Sal dit beter wees om KI-instrumente in die onderwys- en opleidingsektor te gebruik, of nie?</h2>
-			<p>Ja, dit is beter om KI-instrumente te gebruik, en daar is baie maniere waarop onderwysers en KI kan saamwerk om die potensiële risiko’s te voorkom en die voordele van KI in die onderwys ten volle te benut.
+			<p>Ja, dit is beter om KI-instrumente te gebruik, en daar is baie maniere waarop onderwysers en KI kan saamwerk om die potensiële risiko’s te voorkom en die voordele van KI in die onderwys ten volle te benut.</p>
 			<ul>
 				<li>Samewerkende onderrig: Eerder as om onderwysers te vervang, kan KI hulle help om die individuele behoeftes van hul leerders te identifiseer en hul onderrig daarvolgens aan te pas.</li>
 				<li>Verrekening van moontlike vooroordele: Onderwysers en KI kan saamwerk om te verseker dat KI-algoritmes vry is van vooroordeel en ontwerp is om billik te wees.</li>
 			</ul>
+			<p>
 			Terugvoer en assessering: KI kan intydse terugvoer gee oor die prestasie van leerders, wat onderwysers in staat stel om gebiede te identifiseer waar leerders sukkel en ingryp voordat die probleem te groot word.
-			</P>
+			</p>
 			<hr></hr>
 			<h1><u>Wat is die manier waarop die onderwys- en opleidingsektor beïnvloed word deur die onetiese gebruik van KI-instrumente?</u></h1>
 			<h2>Hoe beïnvloed E-Afval volhoubaarheid en omgewingsbewaring?</h2>
@@ -109,12 +110,12 @@
 				flex-direction: row;
 				gap: 0.5rem;
 				border-bottom: 1px solid black;
-				padding: 1rem;
+				padding: 1rem 1rem 1rem 0;
 				position: sticky;
 				top: 0;
 			}
 
-			.navbar li a {
+			.navbar div a {
 				text-decoration: none;
 				border: 1px solid black;
 				padding: 0.5rem;
@@ -122,11 +123,11 @@
 				color: black;
 			}
 
-			.navbar li a:hover {
+			.navbar div a:hover {
 				background: #ECECEC;
 			}
 
-			.navbar li a.active{
+			.navbar div a.active{
 				background: #088DAE;
 				color: white;
 			}
@@ -163,6 +164,14 @@
 				padding-right: 10rem;
 			}
 
+			p {
+				background-color: white;
+				padding: 20px;
+				margin: 15px 0;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+				text-align: justify;
+				border-left: 16px solid #d9a638;
+			}
 
 		</style>
 	</body>
